@@ -4,11 +4,11 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'packages/decent-offchain/**'
+      - 'packages/offchain/**'
   pull_request:
     branches: [ main ]
     paths:
-      - 'packages/decent-offchain/**'
+      - 'packages/offchain/**'
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/decent-offchain
+        working-directory: ./packages/offchain
 
     services:
       postgres:
