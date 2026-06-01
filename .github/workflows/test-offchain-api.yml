@@ -20,7 +20,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:15
+        image: ghcr.io/hanzoai/sql:latest
         env:
           POSTGRES_PASSWORD: postgres
           POSTGRES_USER: postgres
